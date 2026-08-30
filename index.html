@@ -5,6 +5,12 @@
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="description" content="MoneyFinder helps you find realistic online income paths based on your skills, time and budget.">
 <meta name="theme-color" content="#07110d">
+<link rel="canonical" href="https://moneyfinder-dusky.vercel.app/">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://moneyfinder-dusky.vercel.app/">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"MoneyFinder","url":"https://moneyfinder-dusky.vercel.app/","description":"Find a realistic online income path based on your time, skills and starting budget."}</script>
 <meta property="og:title" content="MoneyFinder — Find your best way to make money">
 <meta property="og:description" content="Take the free 2-minute quiz and discover an income path that fits you.">
 <title>MoneyFinder — Find your best way to make money</title>
@@ -22,6 +28,8 @@ footer{border-top:1px solid var(--line);padding:30px 0;color:#70877b;font-size:1
 .admin{display:none;position:fixed;inset:0;z-index:30;background:#06100c;overflow:auto}.admin.on{display:block}.adminnav{height:70px;border-bottom:1px solid var(--line);display:flex;align-items:center;padding:0 22px}.adminbody{max-width:1050px;margin:auto;padding:30px 22px}.adminGrid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.admin .card{min-height:120px}.big{font-size:34px;font-weight:900;margin-top:10px}.table{width:100%;border-collapse:collapse;margin-top:18px}.table th,.table td{text-align:left;padding:12px 8px;border-bottom:1px solid var(--line);font-size:13px}.loginbox{max-width:400px;margin:15vh auto;padding:25px}
 @media(max-width:800px){.hero,.calc{grid-template-columns:1fr}.hero{padding:45px 0}.grid{grid-template-columns:1fr 1fr}.adminGrid{grid-template-columns:1fr 1fr}nav a{display:none}}
 @media(max-width:500px){.grid{grid-template-columns:1fr}.hero h1{font-size:51px}.wrap{padding:0 17px}}
+
+.offer-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:22px}.offer{border:1px solid var(--line);background:linear-gradient(145deg,#10251a,#09150f);border-radius:18px;padding:22px;position:relative}.offer .badge{position:absolute;right:15px;top:15px;color:#06200f;background:var(--green);font-size:10px;font-weight:900;padding:6px 8px;border-radius:99px}.offer h3{margin:0 0 8px;font-size:20px}.offer p{color:var(--muted);line-height:1.5;font-size:14px}.offer .meta{display:flex;gap:8px;flex-wrap:wrap;margin:13px 0}.offer .meta span{font-size:11px;color:var(--muted);border:1px solid var(--line);padding:5px 8px;border-radius:99px}.disclosure{font-size:11px;color:#71877c;line-height:1.5;margin-top:16px}@media(max-width:700px){.offer-grid{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -43,8 +51,17 @@ footer{border-top:1px solid var(--line);padding:30px 0;color:#70877b;font-size:1
 <article class="card"><h3>🛒 E-commerce</h3><p>Build a focused store around a real product and a clearly defined customer.</p><div class="tags"><span class="tag">Scalable</span><span class="tag">Higher cost</span></div></article>
 </div></section>
 
+
+<section id="recommended"><div class="eyebrow">START HERE</div><h2>Tools that can help you take action.</h2><p class="muted">Optional third-party services. MoneyFinder may earn a commission if you sign up or purchase through a qualifying link, at no extra cost to you.</p><div class="offer-grid"><article class="offer"><span class="badge">FREELANCING</span><h3>Upwork</h3><p>Find freelance projects and connect with clients. A natural next step if your MoneyFinder result is freelancing or services.</p><div class="meta"><span>Global</span><span>Freelance marketplace</span></div><button class="btn" onclick="affiliateClick('upwork','https://www.upwork.com/')">Explore Upwork →</button></article><article class="offer"><span class="badge">BUILD ONLINE</span><h3>Hostinger</h3><p>Build a website or online business with hosting and site-building tools.</p><div class="meta"><span>Web hosting</span><span>Online business</span></div><button class="btn" onclick="affiliateClick('hostinger','https://www.hostinger.com/')">Explore Hostinger →</button></article></div><p class="disclosure">Affiliate disclosure: these currently use public destinations. They generate commission only after you replace them with your own approved affiliate links. Earnings are not guaranteed.</p></section>
 <section id="calculator"><div class="eyebrow">ESTIMATOR</div><h2>Simple income calculator.</h2><p class="muted">Use it to model scenarios—not to predict guaranteed earnings.</p><div class="calc"><div class="calcbox"><label>Hours per week</label><input id="hours" type="number" min="1" max="100" value="10" oninput="calc()"><label>Target hourly rate (€)</label><input id="rate" type="number" min="1" max="1000" value="20" oninput="calc()"><label>Working weeks per month</label><input id="weeks" type="number" min="1" max="5" value="4" oninput="calc()"></div><div class="calcbox"><div class="eyebrow">SCENARIO</div><div class="estimate" id="estimate">€800</div><p class="muted">Illustrative monthly gross revenue if all selected hours were paid at the selected rate.</p><p class="note">Actual results vary with demand, taxes, fees, cancellations and unpaid work.</p></div></div></section>
 
+
+<section id="faq"><div class="eyebrow">FAQ</div><h2>MoneyFinder questions.</h2>
+<div class="grid">
+<article class="card"><h3>Can MoneyFinder guarantee income?</h3><p>No. MoneyFinder provides educational suggestions and scenario estimates. Actual income depends on skills, demand, effort, costs and many other factors.</p></article>
+<article class="card"><h3>How does the quiz work?</h3><p>It uses your available time, strongest advantage and starting budget to suggest a practical income model to explore.</p></article>
+<article class="card"><h3>How does MoneyFinder make money?</h3><p>MoneyFinder can earn commissions from qualifying affiliate referrals. Any commercial relationship should be disclosed clearly.</p></article>
+</div></section>
 <section id="about"><div class="eyebrow">WHY MONEYFINDER</div><h2>Less hype. More clarity.</h2><div class="grid"><article class="card"><h3>🎯 Personalized</h3><p>Your recommendation is based on your available time, strengths and starting budget.</p></article><article class="card"><h3>📊 Transparent</h3><p>We separate estimates from facts and clearly disclose commercial relationships.</p></article><article class="card"><h3>⚡ Practical</h3><p>Every result is designed to give you one sensible next step instead of a giant list.</p></article></div></section>
 </div></main>
 
@@ -78,10 +95,10 @@ function finish(){
  document.getElementById('qnum').textContent='YOUR MONEYFINDER RESULT';document.getElementById('bar').style.width='100%';document.getElementById('qtitle').textContent=result;
  document.getElementById('options').innerHTML='';document.getElementById('result').innerHTML=`<div class="card"><p>${why}</p><p><b>Next step:</b> define one small offer, find 5 potential customers, and validate demand before spending heavily.</p><button class="btn" onclick="closeQuiz();document.getElementById('methods').scrollIntoView()">Explore this path →</button></div>`;
 }
-function calc(){let h=+document.getElementById('hours').value||0,r=+document.getElementById('rate').value||0,w=+document.getElementById('weeks').value||0;document.getElementById('estimate').textContent='€'+Math.round(h*r*w).toLocaleString('en-US')}
+function affiliateClick(name,url){let clicks=JSON.parse(localStorage.getItem('mf_clicks')||'{}');clicks[name]=(clicks[name]||0)+1;localStorage.setItem('mf_clicks',JSON.stringify(clicks));localStorage.setItem('mf_clicks_total',String(Number(localStorage.getItem('mf_clicks_total')||0)+1));window.open(url,'_blank','noopener')}\nfunction calc(){let h=+document.getElementById('hours').value||0,r=+document.getElementById('rate').value||0,w=+document.getElementById('weeks').value||0;document.getElementById('estimate').textContent='€'+Math.round(h*r*w).toLocaleString('en-US')}
 function openAdmin(){document.getElementById('admin').classList.add('on')}
 function closeAdmin(){document.getElementById('admin').classList.remove('on')}
-function adminLogin(){if(document.getElementById('adminPass').value==='admin-demo'){document.getElementById('adminLogin').style.display='none';document.getElementById('adminDash').style.display='block';document.getElementById('aQuiz').textContent=localStorage.getItem('mf_quizzes')||0;document.getElementById('aClicks').textContent=localStorage.getItem('mf_clicks')||0}else document.getElementById('loginError').textContent='Incorrect demo password.'}
+function adminLogin(){if(document.getElementById('adminPass').value==='admin-demo'){document.getElementById('adminLogin').style.display='none';document.getElementById('adminDash').style.display='block';document.getElementById('aQuiz').textContent=localStorage.getItem('mf_quizzes')||0;document.getElementById('aClicks').textContent=localStorage.getItem('mf_clicks_total')||0}else document.getElementById('loginError').textContent='Incorrect demo password.'}
 function resetStats(){localStorage.removeItem('mf_quizzes');localStorage.removeItem('mf_clicks');document.getElementById('aQuiz').textContent='0';document.getElementById('aClicks').textContent='0'}
 document.addEventListener('keydown',e=>{if(e.ctrlKey&&e.shiftKey&&e.key.toLowerCase()==='a')openAdmin()});calc();
 </script>
